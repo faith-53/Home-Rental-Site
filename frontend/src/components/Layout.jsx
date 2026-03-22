@@ -17,7 +17,7 @@ export default function Layout({ children }) {
           <div className="flex h-16 items-center justify-between">
             <Link to="/" className="flex items-center gap-2 text-xl font-bold text-stone-800">
               <span className="text-2xl">🏠</span>
-              HomeStay
+              Flatio
             </Link>
             <div className="flex items-center gap-4">
               <Link to="/" className="text-stone-600 hover:text-stone-900">
@@ -64,7 +64,7 @@ export default function Layout({ children }) {
       <main>{children}</main>
       <footer className="mt-auto border-t border-stone-200 bg-white py-8">
         <div className="mx-auto max-w-7xl px-4 text-center text-sm text-stone-500">
-          © {new Date().getFullYear()} HomeStay. Find your perfect getaway.
+          © {new Date().getFullYear()} Flatio. Find your perfect getaway.
         </div>
       </footer>
     </div>

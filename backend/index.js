@@ -13,8 +13,8 @@ connectDB();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: ['http://localhost:5173', 'http://127.0.0.1:5173'], credentials: true }));
-app.use(express.json());
+app.use(cors({ origin: ['https://flatio-liart.vercel.app/', 'https://flatio-liart.vercel.app/'], credentials: true }));
+app.use(express.json());ht
 
 app.use('/api/auth', authRoutes);
 app.use('/api/homes', homesRoutes);
