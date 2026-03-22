@@ -55,7 +55,10 @@ router.get('/', async (req, res) => {
     }
 
     if (search) {
-      query.$or = { $search: search };
+      query.$or = [
+        { title: { $regex: search, $options: "i" } },
+        { location: { $regex: search, $options: "i" } }
+      ];
     }
 
     const skip = (Number(page) - 1) * Number(limit);
