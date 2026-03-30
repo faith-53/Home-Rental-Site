@@ -13,7 +13,7 @@ connectDB();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: ['https://flatio-liart.vercel.app/', 'https://flatio-liart.vercel.app/'], credentials: true }));
+app.use(cors({ origin: ['https://d26d61444z7tty.cloudfront.net/'], credentials: true }));
 app.use(express.json());ht
 
 app.use('/api/auth', authRoutes);

@@ -1,4 +1,4 @@
-const API_BASE = 'http://54.210.57.27:5000/api';
+const API_BASE = 'https://d26d61444z7tty.cloudfront.net/api';
 
 const getToken = () => localStorage.getItem('token');
 
