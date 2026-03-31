@@ -1,4 +1,5 @@
-const API_BASE = 'https://d26d61444z7tty.cloudfront.net/api';
+const API_BASE = import.meta.env.VITE_BASE_URL
+//const API_BASE = process.env.REACT_APP_BASE_URL
 
 const getToken = () => localStorage.getItem('token');
 

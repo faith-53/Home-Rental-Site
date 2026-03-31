@@ -16,7 +16,7 @@ export default function Layout({ children }) {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <Link to="/" className="flex items-center gap-2 text-xl font-bold text-stone-800">
-              <span className="text-2xl">🏠</span>
+              <span className="text-2xl"></span>
               Flatio
             </Link>
             <div className="flex items-center gap-4">
