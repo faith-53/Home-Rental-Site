@@ -1,4 +1,4 @@
-const API = import.meta.env.VITE_API_URL
+const API = "https://d26d61444z7tty.cloudfront.net/api";
 
 const getToken = () => localStorage.getItem('token');
 
