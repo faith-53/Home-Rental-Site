@@ -1,5 +1,5 @@
-const API_BASE = import.meta.env.VITE_BASE_URL
-//const API_BASE = process.env.REACT_APP_BASE_URL
+const API = import.meta.env.VITE_API_URL;
+
 
 const getToken = () => localStorage.getItem('token');
 
@@ -19,7 +19,7 @@ export const api = {
     }
 
     try {
-      const url = `${API_BASE}${endpoint}`;
+      const url = `${API}${endpoint}`;
       console.log('Making request to:', url, options);
       
       const response = await fetch(url, { 
