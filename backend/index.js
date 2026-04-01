@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({ origin: ['https://d26d61444z7tty.cloudfront.net/'], credentials: true }));
-app.use(express.json());ht
+app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/homes', homesRoutes);
@@ -30,6 +30,6 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: 'Something went wrong!' });
 });
 
-app.listen(PORT, "0.0.0.0" () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running on port:${PORT}`);
 });
