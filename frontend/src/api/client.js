@@ -1,4 +1,4 @@
-const API = "https://home-rental-site.onrender.com";
+const API = "https://home-rental-site.onrender.com/api";
 
 const getToken = () => localStorage.getItem('token');
 
